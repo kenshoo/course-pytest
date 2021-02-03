@@ -1,6 +1,6 @@
 from invoke import task
 
 @task(default=True)
-def unit_test(ctx):
-    ctx.run("py.test tests")
+def test(ctx, module=""):
+    ctx.run(f"py.test tests/{module}.py")
 

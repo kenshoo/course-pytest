@@ -1,4 +1,6 @@
 invoke
 pytest
 mock
-boto3
+ipython
+jedi==0.17.2
+requests
