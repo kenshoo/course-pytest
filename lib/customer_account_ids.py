@@ -11,5 +11,5 @@ def _get_customer_accounts(customer):
 	host = get_host()
 	headers = get_headers()
 
-    response = requests.get(f"{host}/customer/{customer}", headers=headers)
-    return response.json()
+	response = requests.get(f"{host}/customer/{customer}", headers=headers)
+	return response.json()['id']
